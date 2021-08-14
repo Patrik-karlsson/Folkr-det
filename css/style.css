@@ -14,11 +14,6 @@ body {
   min-height: 100vh;
 }
 
-/* header */
-/* Stop the menu items from flashing when resizing screen 
-https://ishadeed.com/article/layout-flickering/*/
-/* Orginal färger
-#122331 */
 .header {
   background: lightblue;
   position: relative;
@@ -180,7 +175,8 @@ https://ishadeed.com/article/layout-flickering/*/
   align-items: center;
   text-align: center;
 }
-.heroSection h1 {
+h1 {
+  text-align: center;
   font-family: 'Titillium Web', serif;
   font-weight: 700;
   line-height: 6vw;
