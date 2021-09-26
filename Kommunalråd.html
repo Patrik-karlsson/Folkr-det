@@ -2,79 +2,658 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/Kommunalråd.css" />
+  <script src="Script/main.js" defer></script>
   <title>Kommunalråd</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/Kommunalråd.css">
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="grid-item item-1">
-      <div class="sneaker">
-        <div class="circle">
-          <img src="img/moderaterna/Moderaterna.png" alt="Moderaterna">
-        </div>
-        <img src="Img/moderaterna/axelj.png" alt="Axel Johansson">
-      </div>
-      <div class="info">
-        <h1 class="title">Axel Josefson (M)</h1>
-        <h3>Ordförande</h3>
-        <div class="sizes">
-          <button>39</button>
-          <button>40</button>
-          <button class="active">42</button>
-          <button>44</button>
-        </div>
-        <div class="purchase">
-          <button>Purchase</button>
-        </div>
+  <header class="header">
+    <a href="#" class="logo">FOLKRÅDET</a>
+    <div class="menu-btn">
+      <div class="menu-btn__lines"></div>
     </div>
-  <div class="grid-container">
-    <div class="grid-item item-2">
-      <div class="sneaker">
-        <div class="circle">
-          <img src="img/moderaterna/Moderaterna.png" alt="Moderaterna">
+    <ul class="menu-items">
+      <li><a href="#" class="menu-item">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="menu-item expand-btn">Kommunfullmäktige</a>
+        <ul class="dropdown-menu expandable">
+          <li><a href="#" class="menu-item">Kommunstyrelsen</a></li>
+          <li><a href="#" class="menu-item">stadsledningskontoret</a></li>
+          <li class="dropdown dropdown-right">
+            <a href="#" class="menu-item expand-btn">
+              fackförvaltningar
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <ul class="menu-right expandable">
+              <li><a href="#" class="menu-item">exItem 3.1</a></li>
+              <li><a href="#" class="menu-item">exItem 3.2</a></li>
+              <li><a href="#" class="menu-item">exItem 3.3</a></li>
+              <li><a href="#" class="menu-item">exItem 3.4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-right">
+            <a href="#" class="menu-item expand-btn">
+              Item 4
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <ul class="menu-right expandable">
+              <li><a href="#" class="menu-item">exItem 3.1</a></li>
+              <li><a href="#" class="menu-item">exItem 3.2</a></li>
+              <li><a href="#" class="menu-item">exItem 3.3</a></li>
+              <li><a href="#" class="menu-item">exItem 3.4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+      <li class="dropdown">
+        <a href="#" class="menu-item expand-btn">Dropdown Menu</a>
+        <ul class="dropdown-menu expandable">
+          <li><a href="#" class="menu-item">Item 1</a></li>
+          <li><a href="#" class="menu-item">Item 2</a></li>
+          <li class="dropdown dropdown-right">
+            <a href="#" class="menu-item expand-btn">
+              Item 3
+              <i class="fas fa-angle-right"></i>
+            </a>
+            <ul class="menu-right expandable">
+              <li><a href="#" class="menu-item">Item 3.1</a></li>
+              <li><a href="#" class="menu-item">Item 3.2</a></li>
+              <li><a href="#" class="menu-item">Item 3.3</a></li>
+              <li><a href="#" class="menu-item">Item 3.4</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="menu-item">Item 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="menu-item expand-btn">Mega Menu</a>
+        <div class="mega-menu expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Featured 1</h2>
+                <a href="#" class="img-wrapper"><span class="img"><img src="https://picsum.photos/400?random=1"
+                      alt="Random Image" /></span></a>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 2</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 3</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Featured 4</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
         </div>
-        <img src="Img/moderaterna/axelj.png" alt="Axel Johansson">
-      </div>
-      <div class="info">
-        <h1 class="title">Axel Josefson (M)</h1>
-        <h3>Ordförande</h3>
-        <div class="sizes">
-          <button>39</button>
-          <button>40</button>
-          <button class="active">42</button>
-          <button>44</button>
+      </li>
+      <li>
+        <a href="#" class="menu-item expand-btn">Blog</a>
+        <div class="mega-menu blog expandable">
+          <div class="content">
+            <div class="col">
+              <a href="#" class="img-wrapper"><span class="img"><img src="https://picsum.photos/400?random=2"
+                    alt="Random Image" /></span></a>
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum vel quae quos culpa! Voluptate ipsum adipisci et
+                quibusdam deserunt quis.
+              </p>
+              <a href="#" class="Hållna-more">Hållna more...</a>
+            </div>
+            <div class="col">
+              <a href="#" class="img-wrapper"><span class="img"><img src="https://picsum.photos/400?random=3"
+                    alt="Random Image" /></span></a>
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum vel quae quos culpa! Voluptate ipsum adipisci et
+                quibusdam deserunt quis.
+              </p>
+              <a href="#" class="Hållna-more">Hållna more...</a>
+            </div>
+            <div class="col">
+              <a href="#" class="img-wrapper"><span class="img"><img src="https://picsum.photos/400?random=4"
+                    alt="Random Image" /></span></a>
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum vel quae quos culpa! Voluptate ipsum adipisci et
+                quibusdam deserunt quis.
+              </p>
+              <a href="#" class="Hållna-more">Hållna more...</a>
+            </div>
+          </div>
         </div>
-        <div class="purchase">
-          <button>Purchase</button>
-        </div>
-    </div>
-  <div class="grid-container">
-    <div class="grid-item item-3">
-      <div class="sneaker">
-        <div class="circle">
-          <img src="img/moderaterna/Moderaterna.png" alt="Moderaterna">
-        </div>
-        <img src="Img/moderaterna/axelj.png" alt="Axel Johansson">
-      </div>
-      <div class="info">
-        <h1 class="title">Axel Josefson (M)</h1>
-        <h3>Ordförande</h3>
-        <div class="sizes">
-          <button>39</button>
-          <button>40</button>
-          <button class="active">42</button>
-          <button>44</button>
-        </div>
-        <div class="purchase">
-          <button>Purchase</button>
-        </div>
-    </div>
+      </li>
+      <li><a href="#" class="menu-item">About</a></li>
+    </ul>
+  
+  </header>
+
+  <div class="heading">
+    <h1>Ledamöter och Kommunalråd</h1>
   </div>
-  <script src="Script/app.js"></script>
+  <section class="card-display">
+
+    <div class="card">
+      <div class="card-image">
+        <img src="img/moderaterna/axelj.jpg" alt="Axel Josefson">
+      </div>
+      <div class="card-text">
+        <h2>Axel Josefson (M)</h2>
+        <h2>Ordförande</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, a.</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5432</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Liberalerna/axel-darvik.jpg" alt="Axel Darvik">
+      </div>
+      <div class="card-text">
+        <h2>Axel Darvik (L)</h2>
+        <h3> 1:a Vice Ordförande</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, incidunt?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Vänstern/Daniel-Bernmar.jpg" alt="Daniel Bernmar">
+      </div>
+      <div class="card-text">
+        <h2>Daniel Bernmar (V)</h2>
+        <h3>2:a Vice Ordförande</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, cupiditate.</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Socialdemokraterna/Blerta-Hoti.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <h2>Blerta Hoti (S)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt
+          eligendi
+          dolor</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Demokraterna/Martin-Wannholt.jpg" alt="">
+      </div>
+      <div class="card-text">
+        <h2>Martin Wannholt (D) </h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, animi?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Miljöpartiet/KarinPleijel.jpg" alt="Karin Pleijel">
+      </div>
+      <div class="card-text">
+        <h2>Karin Pleijel (MP)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt
+          eligendi
+          dolor</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/moderaterna/hampus.jpg" alt="Hampus Magnusson">
+      </div>
+      <div class="card-text">
+        <h2>Hampus Magnusson (M) </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, deleniti.</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/SocialDemokraterna/Marina Johansson.jpg" alt="Marina Johansson">
+      </div>
+      <div class="card-text">
+        <h2>Marina Johansson (S)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perferendis!</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Vänstern/Grith Fjeldmose.jpg" alt="Grith Fjeldmose">
+      </div>
+      <div class="card-text">
+        <h2>Grith Fjeldmose (V)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, commodi!</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Demokraterna/Jessica Blixt (D).jpg" alt="Jessica Blixt">
+      </div>
+      <div class="card-text">
+        <h2>Jessica Blixt (D)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit.</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/SverieDemokraterna/Jörgen Fogelklou (SD).jpg" alt="Jörgen Fogelklou ">
+      </div>
+      <div class="card-text">
+        <h2>Jörgen Fogelklou (SD)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci!</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/CenterPartiet/Emmyly Bönfors.jpg" alt="Emmyly Bönfors">
+      </div>
+      <div class="card-text">
+        <h2>Emmyly Bönfors (C)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aperiam!</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/SocialDemokraterna/Jonas Attenius .jpg" alt="Jonas Attenius ">
+      </div>
+      <div class="card-text">
+        <h2>Jonas Attenius (S)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sequi?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="heading">
+      <h1>Ersättare och kommunalråd</h1>
+      
+    </div>
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/moderaterna/nina-miskovksy-webb-staende-80-400x400.jpg" alt="Nina Miskovsky ">
+      </div>
+      <div class="card-text">
+        <h2>Nina Miskovsky (M)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sequi?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Vänstern/Jenny-Broman-683x1024.jpg" alt="Jenny Broman ">
+      </div>
+      <div class="card-text">
+        <h2>Jenny Broman (V)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sequi?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/SocialDemokraterna/Viktoria Tryggvadottir Rolka  (S).jpg" alt="Viktoria Tryggvadottir Rolka   ">
+      </div>
+      <div class="card-text">
+        <h2>Viktoria Tryggvadottir Rolka (S)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sequi?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Kristdemokraterna/Elisabet Lann (KD).jpg" alt="Elisabet Lann">
+      </div>
+      <div class="card-text">
+        <h2>Elisabet Lann (KD)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sequi?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-image">
+        <img src="Img/Demokraterna/Henrik Munck (D).jpg" alt="Henrik Munck ">
+      </div>
+      <div class="card-text">
+        <h2>Henrik Munck (D)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sequi?</p>
+        <span class="löftesbarometer">Kampanjlöften</span>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">Hållna</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">Pågående</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">Brutna</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 </body>
 
 </html>

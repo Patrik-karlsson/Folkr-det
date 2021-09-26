@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/mlb.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLBunstyrelsen</title>
+</head>
+<body>
+  <div class="container">
+    <div class="l-grid l-grid--one-column">
+      <div class="l-grid__col l-grid--one-column__col--middle">
+        <div class="l-grid__content l-grid__content--box">
+          <div class="l-grid">
+            <div id=""
+              class="l-grid__col l-grid__col--xs-12 l-grid__col--sm-12 l-grid__col--md-12 l-grid__col--lg-12 l-grid__col--xl-12">
+              <div class="roster__assets content-box">
+                <div class="p-content-heading p-content-heading--none p-content-heading--left">
+                  <h2 class="p-content-heading__text p-content-heading__text--none p-content-heading__text--left">Dodgers
+                    Roster &amp; Staff</h2>
+                </div>
+  
+                <div class="tabs__filter-buttons--container">
+                  <div class="tabs__filter-buttons">
+                    <a href="/dodgers/roster">
+                      <button class="tabs__filter-buttons--button tabs__filter-buttons--button-selected">Active</button>
+                    </a>
+                    <a href="/dodgers/roster/depth-chart">
+                      <button class="tabs__filter-buttons--button">Depth Chart</button>
+                    </a>
+                    <a href="/dodgers/roster/40-man">
+                      <button class="tabs__filter-buttons--button">40-Man</button>
+                    </a>
+                    <a href="/dodgers/roster/nri">
+                      <button class="tabs__filter-buttons--button">
+                        <span class="desktop">Non-Roster</span>
+                        <span class="mobile">NRI</span>
+                      </button>
+                    </a>
+                    <a href="/dodgers/roster/coaches">
+                      <button class="tabs__filter-buttons--button">Coaches</button>
+                    </a>
+                    <a href="/dodgers/roster/transactions">
+                      <button class="tabs__filter-buttons--button">
+                        <span class="desktop">Transactions</span>
+                        <span class="mobile">Moves</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+  
+                <div class="roster-dropdown__container">
+                  <div class="p-dropdown roster-dropdown">
+                    <span class="p-dropdown__label">Active</span>
+  
+                    <div class="p-dropdown__arrow">
+                      <svg viewBox="0 0 470 279" xmlns="http://www.w3.org/2000/svg"
+                        class="p-icon p-icon--arrow-down p-dropdown__icon">
+                        <title>arrow-down</title>
+                        <g transform="translate(-565 -1714)" fill="#010201" fill-rule="evenodd">
+                          <title>Arrow Down icon</title>
+                          <path
+                            d="M830.405 1979.198c-17.18 17.996-45.007 17.996-62.218 0L577.72 1779.252c-17.21-18.027-24.81-65.252 29.57-65.252h384.07c56.216 0 46.782 47.194 29.572 65.252l-190.527 199.946z" />
+                        </g>
+                      </svg>
+                    </div>
+  
+                    <select id="rosterDropdown" class="p-dropdown__actual-select-element">
+                      <option value="/dodgers/roster" selected>Active</option>
+                      <option value="/dodgers/roster/depth-chart">Depth Chart</option>
+                      <option value="/dodgers/roster/40-man">40-Man</option>
+                      <option value="/dodgers/roster/nri">Non-Roster</option>
+                      <option value="/dodgers/roster/coaches">Coaches</option>
+                      <option value="/dodgers/roster/transactions">Transactions</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="players">
+                  <table class="roster__table">
+                    <thead>
+                      <tr>
+                        <td colspan="2">Pitchers</td>
+                        <td class="bat-throw">B/T</td>
+                        <td class="height">Ht</td>
+                        <td class="weight">Wt</td>
+                        <td class="birthday">DOB</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/641360/headshot/silo/current"
+                              alt="Phil Bickford" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/phil-bickford-641360">Phil Bickford</a>
+                          <span class="jersey">52</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 4&quot;</span>
+                            <span class="mobile-info__weight">Wt: 200</span>
+                            <span class="mobile-info__birthday">DOB: 07/10/1995</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 4&quot;</td>
+                        <td class="weight">200</td>
+                        <td class="birthday">07/10/1995</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/677865/headshot/silo/current"
+                              alt="Justin Bruihl" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/justin-bruihl-677865">Justin Bruihl</a>
+                          <span class="jersey">63</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/L</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 2&quot;</span>
+                            <span class="mobile-info__weight">Wt: 215</span>
+                            <span class="mobile-info__birthday">DOB: 06/26/1997</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/L</td>
+                        <td class="height">6&#x27; 2&quot;</td>
+                        <td class="weight">215</td>
+                        <td class="birthday">06/26/1997</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621111/headshot/silo/current"
+                              alt="Walker Buehler" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/walker-buehler-621111">Walker Buehler</a>
+                          <span class="jersey">21</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 2&quot;</span>
+                            <span class="mobile-info__weight">Wt: 185</span>
+                            <span class="mobile-info__birthday">DOB: 07/28/1994</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 2&quot;</td>
+                        <td class="weight">185</td>
+                        <td class="birthday">07/28/1994</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/660813/headshot/silo/current"
+                              alt="Brusdar Graterol" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/brusdar-graterol-660813">Brusdar Graterol</a>
+                          <span class="jersey">48</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 1&quot;</span>
+                            <span class="mobile-info__weight">Wt: 265</span>
+                            <span class="mobile-info__birthday">DOB: 08/26/1998</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 1&quot;</td>
+                        <td class="weight">265</td>
+                        <td class="birthday">08/26/1998</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/572888/headshot/silo/current"
+                              alt="Shane Greene" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/shane-greene-572888">Shane Greene</a>
+                          <span class="jersey">28</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 4&quot;</span>
+                            <span class="mobile-info__weight">Wt: 200</span>
+                            <span class="mobile-info__birthday">DOB: 11/17/1988</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 4&quot;</td>
+                        <td class="weight">200</td>
+                        <td class="birthday">11/17/1988</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/445276/headshot/silo/current"
+                              alt="Kenley Jansen" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/kenley-jansen-445276">Kenley Jansen</a>
+                          <span class="jersey">74</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: S/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 5&quot;</span>
+                            <span class="mobile-info__weight">Wt: 265</span>
+                            <span class="mobile-info__birthday">DOB: 09/30/1987</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">S/R</td>
+                        <td class="height">6&#x27; 5&quot;</td>
+                        <td class="weight">265</td>
+                        <td class="birthday">09/30/1987</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/523260/headshot/silo/current"
+                              alt="Joe Kelly" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/joe-kelly-523260">Joe Kelly</a>
+                          <span class="jersey">17</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 1&quot;</span>
+                            <span class="mobile-info__weight">Wt: 174</span>
+                            <span class="mobile-info__birthday">DOB: 06/09/1988</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 1&quot;</td>
+                        <td class="weight">174</td>
+                        <td class="birthday">06/09/1988</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/608349/headshot/silo/current"
+                              alt="Corey Knebel" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/corey-knebel-608349">Corey Knebel</a>
+                          <span class="jersey">46</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 3&quot;</span>
+                            <span class="mobile-info__weight">Wt: 224</span>
+                            <span class="mobile-info__birthday">DOB: 11/26/1991</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 3&quot;</td>
+                        <td class="weight">224</td>
+                        <td class="birthday">11/26/1991</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/456034/headshot/silo/current"
+                              alt="David Price" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/david-price-456034">David Price</a>
+                          <span class="jersey">33</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/L</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 5&quot;</span>
+                            <span class="mobile-info__weight">Wt: 215</span>
+                            <span class="mobile-info__birthday">DOB: 08/26/1985</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/L</td>
+                        <td class="height">6&#x27; 5&quot;</td>
+                        <td class="weight">215</td>
+                        <td class="birthday">08/26/1985</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/453286/headshot/silo/current"
+                              alt="Max Scherzer" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/max-scherzer-453286">Max Scherzer</a>
+                          <span class="jersey">31</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 3&quot;</span>
+                            <span class="mobile-info__weight">Wt: 208</span>
+                            <span class="mobile-info__birthday">DOB: 07/27/1984</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 3&quot;</td>
+                        <td class="weight">208</td>
+                        <td class="birthday">07/27/1984</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/595014/headshot/silo/current"
+                              alt="Blake Treinen" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/blake-treinen-595014">Blake Treinen</a>
+                          <span class="jersey">49</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 5&quot;</span>
+                            <span class="mobile-info__weight">Wt: 225</span>
+                            <span class="mobile-info__birthday">DOB: 06/30/1988</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 5&quot;</td>
+                        <td class="weight">225</td>
+                        <td class="birthday">06/30/1988</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/670955/headshot/silo/current"
+                              alt="Edwin Uceta" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/edwin-uceta-670955">Edwin Uceta</a>
+                          <span class="jersey">92</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 0&quot;</span>
+                            <span class="mobile-info__weight">Wt: 155</span>
+                            <span class="mobile-info__birthday">DOB: 01/09/1998</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 0&quot;</td>
+                        <td class="weight">155</td>
+                        <td class="birthday">01/09/1998</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/628711/headshot/silo/current"
+                              alt="Julio Urías" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/julio-urias-628711">Julio Urías</a>
+                          <span class="jersey">7</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/L</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 0&quot;</span>
+                            <span class="mobile-info__weight">Wt: 225</span>
+                            <span class="mobile-info__birthday">DOB: 08/12/1996</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/L</td>
+                        <td class="height">6&#x27; 0&quot;</td>
+                        <td class="weight">225</td>
+                        <td class="birthday">08/12/1996</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/681911/headshot/silo/current"
+                              alt="Alex Vesia" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/alex-vesia-681911">Alex Vesia</a>
+                          <span class="jersey">51</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/L</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 1&quot;</span>
+                            <span class="mobile-info__weight">Wt: 209</span>
+                            <span class="mobile-info__birthday">DOB: 04/11/1996</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/L</td>
+                        <td class="height">6&#x27; 1&quot;</td>
+                        <td class="weight">209</td>
+                        <td class="birthday">04/11/1996</td>
+                      </tr>
+                    </tbody>
+                  </table>
+  
+                  <div class="p-ad ad-roster-responsive ad-responsive-slot"
+                    data-targeting="{&quot;pos&quot;:&quot;2&quot;}">
+                    <div id="ad-roster-desktop" class="ad-responsive-size" data-thresholds="[4]"
+                      data-sizes="[[970,90],[728,90]]"></div>
+                    <div id="ad-roster-tablet" class="ad-responsive-size" data-thresholds="[2,3]" data-sizes="[[728,90]]">
+                    </div>
+                    <div id="ad-roster-mobile" class="ad-responsive-size" data-thresholds="[0,1]" data-sizes="[[320,50]]">
+                    </div>
+                  </div>
+  
+  
+                  <table class="roster__table">
+                    <thead>
+                      <tr>
+                        <td colspan="2">Catchers</td>
+                        <td class="bat-throw">B/T</td>
+                        <td class="height">Ht</td>
+                        <td class="weight">Wt</td>
+                        <td class="birthday">DOB</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/605131/headshot/silo/current"
+                              alt="Austin Barnes" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/austin-barnes-605131">Austin Barnes</a>
+                          <span class="jersey">15</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 5&#x27; 10&quot;</span>
+                            <span class="mobile-info__weight">Wt: 187</span>
+                            <span class="mobile-info__birthday">DOB: 12/28/1989</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">5&#x27; 10&quot;</td>
+                        <td class="weight">187</td>
+                        <td class="birthday">12/28/1989</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/669257/headshot/silo/current"
+                              alt="Will Smith" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/will-smith-669257">Will Smith</a>
+                          <span class="jersey">16</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 5&#x27; 10&quot;</span>
+                            <span class="mobile-info__weight">Wt: 195</span>
+                            <span class="mobile-info__birthday">DOB: 03/28/1995</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">5&#x27; 10&quot;</td>
+                        <td class="weight">195</td>
+                        <td class="birthday">03/28/1995</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="roster__table">
+                    <thead>
+                      <tr>
+                        <td colspan="2">Infielders</td>
+                        <td class="bat-throw">B/T</td>
+                        <td class="height">Ht</td>
+                        <td class="weight">Wt</td>
+                        <td class="birthday">DOB</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/571970/headshot/silo/current"
+                              alt="Max Muncy" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/max-muncy-571970">Max Muncy</a>
+                          <span class="jersey">13</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 0&quot;</span>
+                            <span class="mobile-info__weight">Wt: 215</span>
+                            <span class="mobile-info__birthday">DOB: 08/25/1990</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/R</td>
+                        <td class="height">6&#x27; 0&quot;</td>
+                        <td class="weight">215</td>
+                        <td class="birthday">08/25/1990</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/405395/headshot/silo/current"
+                              alt="Albert Pujols" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/albert-pujols-405395">Albert Pujols</a>
+                          <span class="jersey">55</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 3&quot;</span>
+                            <span class="mobile-info__weight">Wt: 235</span>
+                            <span class="mobile-info__birthday">DOB: 01/16/1980</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 3&quot;</td>
+                        <td class="weight">235</td>
+                        <td class="birthday">01/16/1980</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/608369/headshot/silo/current"
+                              alt="Corey Seager" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/corey-seager-608369">Corey Seager</a>
+                          <span class="jersey">5</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 4&quot;</span>
+                            <span class="mobile-info__weight">Wt: 215</span>
+                            <span class="mobile-info__birthday">DOB: 04/27/1994</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/R</td>
+                        <td class="height">6&#x27; 4&quot;</td>
+                        <td class="weight">215</td>
+                        <td class="birthday">04/27/1994</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/457759/headshot/silo/current"
+                              alt="Justin Turner" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/justin-turner-457759">Justin Turner</a>
+                          <span class="jersey">10</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 5&#x27; 11&quot;</span>
+                            <span class="mobile-info__weight">Wt: 202</span>
+                            <span class="mobile-info__birthday">DOB: 11/23/1984</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">5&#x27; 11&quot;</td>
+                        <td class="weight">202</td>
+                        <td class="birthday">11/23/1984</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/607208/headshot/silo/current"
+                              alt="Trea Turner" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/trea-turner-607208">Trea Turner</a>
+                          <span class="jersey">6</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 2&quot;</span>
+                            <span class="mobile-info__weight">Wt: 185</span>
+                            <span class="mobile-info__birthday">DOB: 06/30/1993</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 2&quot;</td>
+                        <td class="weight">185</td>
+                        <td class="birthday">06/30/1993</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="roster__table">
+                    <thead>
+                      <tr>
+                        <td colspan="2">Outfielders</td>
+                        <td class="bat-throw">B/T</td>
+                        <td class="height">Ht</td>
+                        <td class="weight">Wt</td>
+                        <td class="birthday">DOB</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/641355/headshot/silo/current"
+                              alt="Cody Bellinger" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/cody-bellinger-641355">Cody Bellinger</a>
+                          <span class="jersey">35</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/L</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 4&quot;</span>
+                            <span class="mobile-info__weight">Wt: 203</span>
+                            <span class="mobile-info__birthday">DOB: 07/13/1995</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/L</td>
+                        <td class="height">6&#x27; 4&quot;</td>
+                        <td class="weight">203</td>
+                        <td class="birthday">07/13/1995</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/605141/headshot/silo/current"
+                              alt="Mookie Betts" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/mookie-betts-605141">Mookie Betts</a>
+                          <span class="jersey">50</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 5&#x27; 9&quot;</span>
+                            <span class="mobile-info__weight">Wt: 180</span>
+                            <span class="mobile-info__birthday">DOB: 10/07/1992</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">5&#x27; 9&quot;</td>
+                        <td class="weight">180</td>
+                        <td class="birthday">10/07/1992</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/641856/headshot/silo/current"
+                              alt="Billy McKinney" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/billy-mckinney-641856">Billy McKinney</a>
+                          <span class="jersey">29</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: L/L</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 1&quot;</span>
+                            <span class="mobile-info__weight">Wt: 205</span>
+                            <span class="mobile-info__birthday">DOB: 08/23/1994</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">L/L</td>
+                        <td class="height">6&#x27; 1&quot;</td>
+                        <td class="weight">205</td>
+                        <td class="birthday">08/23/1994</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/572041/headshot/silo/current"
+                              alt="AJ Pollock" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/aj-pollock-572041">AJ Pollock</a>
+                          <span class="jersey">11</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 1&quot;</span>
+                            <span class="mobile-info__weight">Wt: 210</span>
+                            <span class="mobile-info__birthday">DOB: 12/05/1987</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 1&quot;</td>
+                        <td class="weight">210</td>
+                        <td class="birthday">12/05/1987</td>
+                      </tr>
+                      <tr>
+                        <td class="player-thumb">
+                          <div class="player-thumb__back">
+                            <img
+                              src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621035/headshot/silo/current"
+                              alt="Chris Taylor" />
+                          </div>
+                        </td>
+                        <td class="info">
+                          <a href="/player/chris-taylor-621035">Chris Taylor</a>
+                          <span class="jersey">3</span>
+  
+  
+  
+  
+  
+  
+                          <div class="mobile-info">
+  
+                            <span class="mobile-info__bat-throw">B/T: R/R</span>
+                            <span class="mobile-info__height">Ht: 6&#x27; 1&quot;</span>
+                            <span class="mobile-info__weight">Wt: 196</span>
+                            <span class="mobile-info__birthday">DOB: 08/29/1990</span>
+                          </div>
+                        </td>
+                        <td class="bat-throw">R/R</td>
+                        <td class="height">6&#x27; 1&quot;</td>
+                        <td class="weight">196</td>
+                        <td class="birthday">08/29/1990</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <section id="footer-message-container">
+                    <div>
+                      While not officially part of the 40-man roster, players on the 60-day injured list (IL-60) are
+                      included on the 40-Man tab.
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
