@@ -11,24 +11,40 @@ html {
   font-size: 62.5%;
 }
 
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
 /* Body */
 body {
-  font-family: 'Beastly', sans-serif;
-  background: rgb(236, 236, 236);
+  font-family: 'Poppins', sans-serif;
+  background: #000000;
   color: #ffffff;
   min-height: 100vh;
 }
 /* Nav/header */
 .header {
-  background: rgb(51, 51, 51);
+  background: lightblue;
   position: relative;
   max-width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  min-height: 10vh;
+  padding: 1rem 2rem;
   z-index: 1;
 }
 .header a {
@@ -64,7 +80,7 @@ body {
 .dropdown-menu,
 .menu-right {
   position: absolute;
-  background: rgb(51, 51, 51);
+  background: lightblue;
   width: 100%;
   top: 5rem;
   left: 0;
@@ -104,7 +120,7 @@ body {
   z-index: 1;
 }
 .mega-menu .content {
-  background: rgb(51, 51, 51);
+  background: lightblue;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -113,13 +129,13 @@ body {
   justify-content: space-between;
 }
 .blog .content {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 50rem);
 }
 .content .col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  line-height: 2.5rem;
+  line-height: 3rem;
 }
 .content .col .img-wrapper {
   display: block;
@@ -157,7 +173,7 @@ body {
 .content .col .read-more {
   display: inline-block;
   padding-top: 1rem;
-  color: #ffffff;
+  color: #427dad;
   transition: color 0.3s ease;
 }
 .col .mega-links li,
@@ -165,7 +181,7 @@ body {
   padding: 0 1rem;
 }
 .menu-items li:hover .mega-menu {
-  top: 5rem;
+  top: 4.5rem;
   opacity: 1;
   visibility: visible;
 }
@@ -174,10 +190,11 @@ body {
 }
 
 /* section */
+/* fix resposivness wrapp */
 .hero {
   min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url('/Img/Lester\ Freamon.jpg');
+    url('/Img/edvin-johansson-xySWKrVlcWQ-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -247,6 +264,9 @@ body {
 /* MEDIA QUERY */
 
 @media screen and (max-width: 970px) {
+  html {
+    font-size: 45%;
+  }
   .menu-btn {
     display: flex;
   }
